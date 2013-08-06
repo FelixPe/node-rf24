@@ -57,7 +57,7 @@ Handle<Value> Wrapper::Begin(const Arguments& args) {
   return scope.Close( Undefined() );
 }
 
-Handle<Value> Wrapper::Begin(const Arguments& args) {
+Handle<Value> Wrapper::Listen(const Arguments& args) {
   HandleScope scope;
 
   Wrapper* obj = ObjectWrap::Unwrap<Wrapper>(args.This());
